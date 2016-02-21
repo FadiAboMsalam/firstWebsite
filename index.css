@@ -28,6 +28,8 @@
   .navbar-default .navbar-nav > li > a:hover {
     border-bottom: 4px solid #bb3e3e;
     color: #e6e6e6; }
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #e6e6e6; }
 
 .navbar-default .navbar-nav {
   padding-right: 15px;
@@ -46,13 +48,13 @@
 
 .navbar.navbar-default {
   padding-top: 15px;
-  padding-bottom: 25px;
   padding-right: 15px;
   color: #e6e6e6;
   margin-bottom: 0;
   border-radius: 0;
   background-color: #353535;
-  border: 1px solid #353535; }
+  border: 1px solid #353535;
+  min-height: 80px; }
 
 .navbar-default .navbar-brand {
   color: #e6e6e6;

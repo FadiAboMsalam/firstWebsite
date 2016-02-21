@@ -52,6 +52,8 @@ $mediumBlack: #353535
   &:hover
     +border(bottom,4px,solid,$redColor)
     color: $white
+  &:focus
+    color: $white
 
 .navbar-default .navbar-nav
   +padding(right,15px)
@@ -72,13 +74,13 @@ $mediumBlack: #353535
 .navbar 
   &.navbar-default 
     +padding(top,15px)
-    +padding(bottom,25px)
     +padding(right,15px)
     color: $white
     +margin(bottom,0)
     border-radius: 0
     background-color: $mediumBlack
     border: 1px solid $mediumBlack
+    min-height: 80px
 
 .navbar-default .navbar-brand
   color: $white
