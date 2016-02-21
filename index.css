@@ -1,0 +1,212 @@
+@-webkit-keyframes fadeIN {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0.75; } }
+@-moz-keyframes fadeIN {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0.75; } }
+@-ms-keyframes fadeIN {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0.75; } }
+@-o-keyframes fadeIN {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0.75; } }
+@keyframes fadeIN {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0.75; } }
+.navbar-default .navbar-nav > li > a {
+  color: #e6e6e6; }
+  .navbar-default .navbar-nav > li > a:hover {
+    border-bottom: 4px solid #bb3e3e;
+    color: #e6e6e6; }
+
+.navbar-default .navbar-nav {
+  padding-right: 15px;
+  border-right: 1px solid #8d8d8d; }
+
+.socialClass {
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 15px; }
+  .socialClass > li > a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #e6e6e6; }
+    .socialClass > li > a:hover {
+      color: #5a5a5a; }
+
+.navbar.navbar-default {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  padding-right: 15px;
+  color: #e6e6e6;
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #353535;
+  border: 1px solid #353535; }
+
+.navbar-default .navbar-brand {
+  color: #e6e6e6;
+  padding-left: 50px; }
+  .navbar-default .navbar-brand:hover {
+    color: #e6e6e6; }
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px; }
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10; }
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777; }
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px; }
+
+.carousel-caption h3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 72px;
+  font-weight: 600; }
+
+@media screen and (max-width: 500px) {
+  .carousel {
+    height: 300px; }
+    .carousel .item {
+      height: 300px; }
+
+  .carousel-inner > .item > img {
+    height: 300px; }
+
+  .carousel-caption h3 {
+    font-size: 32px;
+    font-weight: 300; } }
+.btn-medium-black, .btn-medium-def {
+  color: #e6e6e6;
+  border-radius: 0;
+  padding: 12px, 24px;
+  margin-top: 40px;
+  margin-right: 20px;
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s; }
+  .btn-medium-black:hover, .btn-medium-def:hover {
+    border-color: #bb3e3e;
+    background-color: #bb3e3e;
+    color: #e6e6e6; }
+
+.btn-medium-black {
+  border-color: #353535;
+  background-color: #353535; }
+
+.btn-medium-def {
+  border-color: #8d8d8d;
+  background-color: #8d8d8d; }
+
+@media screen and (max-width: 500px) {
+  .container h3, .container p {
+    text-align: center; }
+
+  .btn-medium-def, .btn-medium-black {
+    width: 100%;
+    margin-bottom: 10px; } }
+.mid-h3 {
+  font-size: 36px;
+  font-weight: 500; }
+
+.mid-p {
+  font-size: 30px;
+  font-weight: 300;
+  color: #8d8d8d; }
+
+.footer {
+  width: 100%;
+  height: 200px;
+  color: #e6e6e6;
+  background-color: #333;
+  margin-top: 100px;
+  padding-top: 20px; }
+  .footer a {
+    color: gray;
+    text-decoration: none; }
+
+@media only screen and (max-width: 768px) {
+  .btn-medium-def {
+    margin-top: 1px; }
+
+  .footer {
+    height: 400px; }
+    .footer p {
+      text-align: left; } }
+.photos {
+  margin-bottom: 20px; }
+  .photos img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1; }
+
+.text-white {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 24px; }
+  .text-white h3 {
+    font-size: 32px;
+    font-weight: 500; }
+  .text-white p {
+    font-size: 16px;
+    font-weight: normal; }
+
+.hei {
+  height: 308px;
+  margin-top: 24px; }
+  .hei:hover {
+    -webkit-animation: fadeIN 0.7s  forwards;
+    -moz-animation: fadeIN 0.7s  forwards;
+    -ms-animation: fadeIN 0.7s  forwards;
+    -o-animation: fadeIN 0.7s  forwards;
+    animation: fadeIN 0.7s  forwards; }
+
+.line-divider {
+  display: inline-block;
+  width: 125px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 3px solid white; }
+
+@media only screen and (max-width: 500px) {
+  .hei {
+    height: 213px; }
+
+  .text-white {
+    width: 180px; }
+    .text-white h1 {
+      font-size: 25.6px; }
+    .text-white p {
+      text-align: left;
+      font-size: 14px; } }
+.navbar-toggle .collapsed {
+  background-color: red; }
+
+/*# sourceMappingURL=index.css.map */
