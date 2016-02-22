@@ -289,9 +289,11 @@
     .contact-img .text-white h1 {
       font-size: 30px; }
     .contact-img .text-white p {
-      font-size: 14px; }
+      font-size: 14px;
+      word-wrap: break-word;
+      max-width: 300px; }
 
-  .top-padded p {
+  .top-padded p, .top-padded h3 {
     text-align: left; } }
 
 /*# sourceMappingURL=contact.css.map */
