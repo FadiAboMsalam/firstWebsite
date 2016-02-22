@@ -1,0 +1,79 @@
+@import 'index'
+
+.no-padd
+  padding: 0
+.text-white
+  bottom: 6.25em//100px
+  left: 3em//48px
+  h1
+    font-size: 72px
+    font-weight: 600
+  p
+    font-size: 20.8px
+    font-weight: normal
+
+.contact-img
+  img
+    width: 100%
+    height: 400px
+
+.top-padded
+  form
+    padding: 25px 0
+  p
+    font-size: 0.75em
+    font-weight: bold
+    color: #959595
+    +padding(top,12px)
+  +padding(top,50px)
+  input
+    width: 100%
+    +padding(top,6px)
+    +padding(bottom,6px)
+    color: #666666
+    border-radius: 3px
+    vertical-align: middle
+    box-shadow: none
+    border: 0
+    background-color: #ffffff
+    border: 2px solid #f1f1f1
+  input[type="submit"]
+    width: 30%
+    background-color: $redColor
+    color: $white
+    font-size: 14px
+    font-weight: 700
+  textarea
+    width: 100%
+    height: 100px
+.well-lg
+  border: 0
+  box-shadow: none
+.red-color
+  color: $redColor
+.headquarter
+  p
+    font-size: 16px
+    color: #666666
+    font-weight: normal
+  ul
+    padding-left: 15px
+.divider
+  width: 30px
+  height: 3px
+  border-top: 3px solid #959595
+  margin: 24px 0
+
+@media screen and (max-width: 500px)
+  .contact-img
+    img
+      width: 100%
+      height: 400px
+    .text-white
+      width: 100%
+      h1
+        font-size: 30px
+      p
+        font-size: 14px
+  .top-padded
+    text-align: left

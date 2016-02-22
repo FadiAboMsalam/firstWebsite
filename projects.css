@@ -100,7 +100,7 @@
   .carousel-caption h3 {
     font-size: 32px;
     font-weight: 300; } }
-.btn-medium-black, .btn-medium-def {
+.btn-medium-black, .btn-medium-def, .btn-medium-dropdown-def {
   color: #e6e6e6;
   border-radius: 0;
   padding: 12px, 24px;
@@ -110,7 +110,7 @@
   -o-transition: background-color 0.25s;
   -webkit-transition: background-color 0.25s;
   transition: background-color 0.25s; }
-  .btn-medium-black:hover, .btn-medium-def:hover {
+  .btn-medium-black:hover, .btn-medium-def:hover, .btn-medium-dropdown-def:hover {
     border-color: #bb3e3e;
     background-color: #bb3e3e;
     color: #e6e6e6; }
@@ -174,10 +174,10 @@
   color: white;
   padding: 24px; }
   .text-white h3 {
-    font-size: 2em;
+    font-size: 32px;
     font-weight: 500; }
   .text-white p {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: normal; }
 
 .hei {
@@ -211,4 +211,126 @@
 .navbar-toggle .collapsed {
   background-color: red; }
 
-/*# sourceMappingURL=index.css.map */
+@-webkit-keyframes rotateDown {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(90deg); } }
+@-moz-keyframes rotateDown {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(90deg); } }
+@-ms-keyframes rotateDown {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(90deg); } }
+@-o-keyframes rotateDown {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(90deg); } }
+@keyframes rotateDown {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(90deg); } }
+@-webkit-keyframes rotateUp {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(0deg); } }
+@-moz-keyframes rotateUp {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(0deg); } }
+@-ms-keyframes rotateUp {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(0deg); } }
+@-o-keyframes rotateUp {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes rotateUp {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(0deg); } }
+.btn-medium-black, .btn-medium-def, .btn-medium-dropdown-def {
+  color: #e6e6e6;
+  border-radius: 0;
+  padding: 12px, 24px;
+  margin-top: 40px;
+  margin-right: 0;
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s; }
+  .btn-medium-black:hover, .btn-medium-def:hover, .btn-medium-dropdown-def:hover {
+    border-color: #bb3e3e;
+    background-color: #bb3e3e;
+    color: #e6e6e6; }
+
+.btn-medium-black {
+  border-radius: 3px;
+  border-color: #353535;
+  background-color: #353535;
+  float: left; }
+
+.btn-medium-dropdown-def {
+  width: 152px;
+  height: 46px;
+  border-radius: 3px;
+  border-color: #8d8d8d;
+  background-color: #8d8d8d;
+  float: left;
+  text-align: center; }
+  .btn-medium-dropdown-def span {
+    -webkit-animation: rotateUp 0.7s  forwards;
+    -moz-animation: rotateUp 0.7s  forwards;
+    -ms-animation: rotateUp 0.7s  forwards;
+    -o-animation: rotateUp 0.7s  forwards;
+    animation: rotateUp 0.7s  forwards; }
+  .btn-medium-dropdown-def a {
+    display: inline-block;
+    color: #e6e6e6;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px; }
+  .btn-medium-dropdown-def:hover span {
+    -webkit-animation: rotateDown 0.7s  forwards;
+    -moz-animation: rotateDown 0.7s  forwards;
+    -ms-animation: rotateDown 0.7s  forwards;
+    -o-animation: rotateDown 0.7s  forwards;
+    animation: rotateDown 0.7s  forwards; }
+  .btn-medium-dropdown-def .dropdown-menu {
+    background-color: #bb3e3e; }
+    .btn-medium-dropdown-def .dropdown-menu a {
+      color: #e6e6e6; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+.dropdown-menu {
+  margin: 0; }
+  .dropdown-menu li a {
+    font-size: 14px; }
+    .dropdown-menu li a:hover {
+      color: #e6e6e6;
+      background-color: #bb3e3e;
+      font-weight: 700; }
+
+@media screen and (max-width: 500px) {
+  .btn-medium-dropdown-def {
+    width: 100%;
+    margin: 0; }
+
+  .paginationn {
+    text-align: center; } }
+
+/*# sourceMappingURL=projects.css.map */
