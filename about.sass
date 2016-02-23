@@ -1,0 +1,46 @@
+@import 'index'
+$historyGray: rgb(102, 102, 102)
+$historyBgColor:rgb(251, 249, 246)
+.well
+  background-color: $historyBgColor
+  border: 0
+.history
+  h1
+    font-family: Montserrat, sans-serif
+    font-size: 3em//48px
+    font-weight: 500
+  p
+    color: $historyGray
+    font-family: 'Open Sans', sans-serif
+    font-size: 1.3em//20.8px
+    +margin(bottom,2em)
+.cofounder
+  text-align: center
+  h3
+    font-family: Montserrat, sans-serif
+    font-size: 1.125em//18px
+    font-weight: 500
+  h4
+    font-family: 'Open Sans', sans-serif
+    font-size: 1em//16px
+    color: $historyGray
+  p
+    max-width: 70%
+    margin: 0 auto 1.5em auto//24px auto
+    font-size: 1em//16px
+    font-family: 'Open Sans', sans-serif
+    color: $historyGray
+  i
+    color: $historyGray
+    +margin(right,0.3125em)//5px)
+
+.history-divider
+  height: 0.125em//2px
+  width: 1.875em//30px
+  border: 0.125em solid $historyGray //2px solid $historyGray
+  margin: 0.75em auto//12px auto
+
+@media screen and (max-width: 500px)
+  .cofounder,.history
+    img
+      width: 300px
