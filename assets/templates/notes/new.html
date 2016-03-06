@@ -1,0 +1,137 @@
+<h1>notes new</h1>
+<h1>Create {{note.title}}</h1>
+<form ng-submit="createNote(note)">
+  <fieldset class="form-group">
+    <label for="title">title</label>
+    <input type="text" ng-model="note.title" id="title" class="form-control">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="description">description</label>
+    <input type="text" ng-model="note.description" id="description" class="form-control">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="content">content</label>
+    <textarea type="text" ng-model="note.content" id="content" class="form-control">
+    </textarea>
+  <fieldset class="form-group">
+    <label for="category">category</label>
+    <select ng-options="category.id as category.name for category in categories" ng-model="note.categoryId">
+    </select>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="user">user</label>
+      <select ng-options="user.id as user.username for user in users" ng-model="note.userId">
+      </select>
+  </fieldset>
+  <input type="submit" value="save changes" class="btn btn-warning" ng-disabled="disableBtn">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>Edit: {{note.title}}</h1>
+<form>
+  <fieldset class="form-group">
+    <label for="title">Title</label>
+    <input class="form-control" type="text" id="title" name="title" ng-model="note.title">
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="title">Category</label>
+    <select ng-options="category.id as category.name for category in categories" ng-model="note.categoryId"></select>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="title">User</label>
+    <select ng-options="user.id as user.name for user in users" ng-model="note.userId"></select>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="description">Description</label>
+    <input class="form-control" type="text" id="description" name="description" ng-model="note.description">
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="content">Content</label>
+    <textarea class="form-control" type="text" id="content" name="content" ng-model="note.content"></textarea>
+  </fieldset>
+
+  <input type="submit" value="{{isSubmitting ? 'saving...' : 'Save'}}" class="btn btn-default" ng-click="saveNote(note)" ng-disabled="isSubmitting">
+</form> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>New Note</h1>
+<form>
+  <fieldset class="form-group">
+    <label for="title">Title</label>
+    <input class="form-control" type="text" id="title" name="title" ng-model="note.title">
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="description">Description</label>
+    <input class="form-control" type="text" id="description" name="description" ng-model="note.description">
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="content">Content</label>
+    <textarea class="form-control" type="text" id="content" name="content" ng-model="note.content"></textarea>
+  </fieldset>
+
+  <input type="submit" value="{{isSubmitting ? 'saving...' : 'Save'}}" class="btn btn-default" ng-click="saveNote(note)" ng-disabled="isSubmitting">
+</form> -->

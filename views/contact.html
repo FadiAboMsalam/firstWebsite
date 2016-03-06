@@ -1,0 +1,63 @@
+<link href="assets/styles/contact.css" media="all" rel="stylesheet" />
+<div class="container-fluid no-padd">
+    <div class="row">
+        <div class="col-md-12 contact-img">
+            <img src="http://themes.wplook.com/thearchitect/wp-content/uploads/sites/14/2015/02/bg_map.jpg">
+            <div class="text-white">
+                <h1>Our Contact</h1>
+                <p>We are always happy to answer questions, listen to new ideas, and meet new and interesting people.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row top-padded">
+        <div class="col-md-4">
+            <div class="well well-lg" ng-controller="sendMsgController as sendMsgCtrl">
+                <form name="sendMsgForm" novalidate ng-submit="sendMsgCtrl.addMessage()">
+                    <p>Your Name (required)
+                        <br> </p>
+                    <input type="text" ng-model="sendMsgCtrl.msgs.name" required>
+                    <p>Your Email (required)
+                        <br> </p>
+                    <input ng-model="sendMsgCtrl.msgs.email" type="email" required>
+                    <p>Subject
+                        <br> </p>
+                    <input type="text" ng-model="sendMsgCtrl.msgs.subject" required>
+                    <p>Your Message
+                        <br> </p>
+                    <textarea ng-model="sendMsgCtrl.msgs.content" required></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="SEND" class="btn btn-large btn-default"> 
+                    *{{sendMsgCtrl.messages}}
+                </form>
+            </div>
+        </div>
+        <div class="col-md-8 headquarter">
+            <h3>Headquarters</h3>
+            <div class="col-md-6">
+                <h4>Monteral</h4>
+                <div class="divider"></div>
+                <p>129 rue de la Commune
+                    <br>Montreal (Québec)
+                    <br>H4K 1B8, Canada</p>
+                <ul>
+                    <li><i class="fa fa-phone"></i> (514) 888-8888</li>
+                    <li class="red-color"><i class="fa fa-envelope-o"></i> mtl@architect.com</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>NEW YORK</h4>
+                <div class="divider"></div>
+                <p>112 East 22th Street, 2nd Floor
+                    <br>New York, NY
+                    <br>10005, USA</p>
+                <ul>
+                    <li><i class="fa fa-phone"></i> (514) 888-8888</li>
+                    <li class="red-color"><i class="fa fa-envelope-o"></i> mtl@architect.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
