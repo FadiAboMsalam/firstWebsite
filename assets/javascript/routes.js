@@ -1,4 +1,4 @@
-angular.module('project')
+angular.module('fadiProject')
 .config(['$routeProvider',function($routeProvider) {
   $routeProvider
 

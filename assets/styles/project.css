@@ -1,0 +1,20 @@
+.no-padding {
+  padding: 0; }
+
+.carousel.slide {
+  margin-bottom: 0; }
+
+.project-desc h3 {
+  font-size: 2em; }
+.project-desc p {
+  font-size: 1em;
+  padding: 0 0.5em;
+  margin-bottom: 2em; }
+.project-desc ul {
+  margin-bottom: 2em; }
+
+.project-container a img {
+  margin-bottom: 1em;
+  padding: 0 0.25em; }
+
+/*# sourceMappingURL=project.css.map */

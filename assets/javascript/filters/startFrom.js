@@ -1,4 +1,4 @@
-angular.module('project').
+angular.module('fadiProject').
 filter('startFrom',startFrom);
 function startFrom() {
     return function(input, start) {

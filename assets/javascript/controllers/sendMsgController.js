@@ -1,4 +1,4 @@
-angular.module('project').controller('sendMsgController',sendMsgController);
+angular.module('fadiProject').controller('sendMsgController',sendMsgController);
 function sendMsgController(){
 	this.messages=[];
 	this.msgs={};

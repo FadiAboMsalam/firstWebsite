@@ -30,7 +30,7 @@
     <div class="photos" ng-controller="projectController as projectCtrl">
         <div class="row">
             <div ng-repeat="project in projectCtrl.projects | startFrom :projectCtrl.pageNum |limitTo:3">
-                <project-element></project-element>
+                <project-element ></project-element>
             </div>
         </div>
         <div class="paginationn">

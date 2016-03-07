@@ -1,1 +1,1 @@
-angular.module('project',['ngRoute','ngResource']);
+angular.module('fadiProject',['ngRoute','ngResource']);
