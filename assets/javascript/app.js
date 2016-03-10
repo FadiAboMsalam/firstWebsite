@@ -1,1 +1,1 @@
-angular.module('fadiProject',['ngRoute','ngResource']);
+angular.module('fadiProject',['ngRoute','ngResource','ui.bootstrap']);

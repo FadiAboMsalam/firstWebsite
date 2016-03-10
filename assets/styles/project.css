@@ -1,5 +1,6 @@
 .no-padding {
-  padding: 0; }
+  padding: 0; 
+}
 
 .carousel.slide {
   margin-bottom: 0; }
@@ -17,4 +18,11 @@
   margin-bottom: 1em;
   padding: 0 0.25em; }
 
+.photos img {
+    width: 90%;
+    height: 90%;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1; 
+  }
 /*# sourceMappingURL=project.css.map */

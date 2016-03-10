@@ -1,12 +1,12 @@
 <link rel="stylesheet" type="text/css" href="assets/styles/project.css">
-<div class="container-fluid">
+<div class="container-fluid" ng-controller="projectController as projectCtrl">
     <div class="row">
         <div class="col-md-8 col-xs-12 no-padding">
         	<project-carousel array=[{img:{src:"http://themes.wplook.com/thearchitect/wp-content/uploads/sites/14/2015/02/slider0.jpg",alt:""},title:"One&OnlyPortonovi",para:"Civic+Public,Commercial,Gouvernment,Montenegro,Europe"},{img:{src:"http://themes.wplook.com/thearchitect/wp-content/uploads/sites/14/2015/02/slider1.jpg",alt:""},title:"BaylisRDLivingRoom",para:"Commercial,London,England"},{img:{src:"http://themes.wplook.com/thearchitect/wp-content/uploads/sites/14/2015/02/slider2.jpg",alt:""},title:"Truth.Effort.Courage.",para:"Webelievethatgreatarchitectureanddesignmustsimplyimprovethequalityofliving."}]></project-carousel>
         </div>
         <div class="col-md-4 col-xs-12 project-desc" >
-            <h3>Project Description</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+            <h3>{{projectCtrl.project.title}}</h3>
+            <p>{{projectCtrl.project.description}}</p>
             <h3>Project Details</h3>
             <ul>
                 <li>Lorem Ipsum</li>
@@ -18,25 +18,10 @@
     </div>
     <h3>Related Pictures</h3>
     <div class="row project-container">
-        <div class="col-md-3 col-xs-6 no-padding">
-            <a href="#">
-                <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="fff">
-            </a>
-        </div>
-        <div class="col-md-3 col-xs-6 no-padding">
-            <a href="#">
-                <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="fff">
-            </a>
-        </div>
-        <div class="col-md-3 col-xs-6 no-padding">
-            <a href="#">
-                <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="fff">
-            </a>
-        </div>
-        <div class="col-md-3 col-xs-6 no-padding">
-            <a href="#">
-                <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="fff">
-            </a>
+        <div ng-repeat="img in projectCtrl.project.images">
+            <div class="col-md-3 col-xs-6 no-padding hei photos">
+                <img ng-src="{{projectCtrl.websiteBaseUrl+img.url}}" alt="fff">
+            </div>
         </div>
     </div>
 </div>

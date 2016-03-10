@@ -1,19 +1,10 @@
 <div class="col-md-4 col-xs-12 hei">
-	<img ng-src="{{'http://ec2-54-88-218-183.compute-1.amazonaws.com'+project.mainImageUrl}}">
-	<div class="text-white">
-		<h1>{{project.title}}</h1>
-		<span class="line-divider"></span>
-		<p>{{project.description}}</p>
-	</div>
-</div>
-<!-- 
-<div class="col-md-4 col-xs-12 hei">
-	<a href="#project">
-		<img ng-src="{{project.img}}">
+	<a ng-href="#project/+{{project.id}}">
+		<img ng-src="{{'http://ec2-54-88-218-183.compute-1.amazonaws.com'+project.mainImageUrl}}">
 		<div class="text-white">
-			<h1>{{project.name}}</h1>
+			<h1>{{project.title}}</h1>
 			<span class="line-divider"></span>
-			<p>{{project.para}}</p>
+			<p>{{project.description}}</p>
 		</div>
 	</a>
-</div> -->
+</div>

@@ -20,9 +20,9 @@ angular.module('fadiProject')
                 // controller  : 'contactController'
             })
             // route for the contact page
-            .when('/project', {
+            .when('/project/:project_id?', {
                 templateUrl : '../../views/project.html',
-                // controller  : 'contactController'
+                controller  : 'projectController'
             })
             // route for the projects page
             .when('/projects', {
