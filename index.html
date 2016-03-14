@@ -2,13 +2,18 @@
 <html lang="en" ng-app="fadiProject">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
 	<title>Fadi Abo Msalam</title>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link href="assets/styles/bootstrap.min.css" media="all" rel="stylesheet" />
- <link href="assets/styles/index.css" media="all" rel="stylesheet" />
+  	<link href="assets/styles/bootstrap.min.css" media="all" rel="stylesheet" />
+	<link href="assets/styles/index.css" media="all" rel="stylesheet" />
 
+	<link rel="stylesheet" type="text/css" href="assets/styles/demo.css" />
+	<link rel="stylesheet" type="text/css" href="assets/styles/elastislide.css" />
+	<link rel="stylesheet" type="text/css" href="assets/styles/custom.css" />
+	// <script src="assets/javascript/vendor/modernizr.custom.17475.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -79,11 +84,12 @@
 		</div>
 	</div>
 	<!-- vendor -->
+	<script src="https://code.jquery.com/jquery-2.2.1.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-resource.js"></script>
-	<script src="https://code.jquery.com/jquery-2.2.1.js"></script>
 	<script src="assets/javascript/vendor/bootstrap.js"></script>
+
 	<!-- app & route -->
 	<script src="assets/javascript/app.js"></script>
 	<script src="assets/javascript/routes.js"></script>
@@ -99,11 +105,15 @@
 	<script src="assets/javascript/directives/projectElement.js"></script>
     <script src="assets/javascript/directives/projectCarousel.js"></script>
     <script src="assets/javascript/directives/paginationDirective.js"></script>
+    <script src="assets/javascript/directives/elistide.js"></script>
 
 
 	<!-- filters -->
     <!-- pagination bootstrap ui -->
 	<script data-require="ui-bootstrap@*" data-semver="0.12.1" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.min.js"></script>
+	<!-- projectSlider -->
+	 <script src="assets/javascript/vendor/jquerypp.custom.js"></script>
+	 <script src="assets/javascript/vendor/jquery.elastislide.js"></script>
 
 </body>
 </html>

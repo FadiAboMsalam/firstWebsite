@@ -1,25 +1,19 @@
-<link rel="stylesheet" type="text/css" href="assets/styles/project.css">
-<div class="container-fluid" ng-controller="projectController as projectCtrl">
-    <div class="row">
-        <div class="col-md-8 col-xs-12 no-padding">
-        	<!-- <project-carousel array=[{img:{src:"http://themes.wplook.com/thearchitect/wp-content/uploads/sites/14/2015/02/slider0.jpg",alt:""},title:"One&OnlyPortonovi",para:"Civic+Public,Commercial,Gouvernment,Montenegro,Europe"},{img:{src:"http://themes.wplook.com/thearchitect/wp-content/uploads/sites/14/2015/02/slider1.jpg",alt:""},title:"BaylisRDLivingRoom",para:"Commercial,London,England"},{img:{src:"http://themes.wplook.com/thearchitect/wp-content/uploads/sites/14/2015/02/slider2.jpg",alt:""},title:"Truth.Effort.Courage.",para:"Webelievethatgreatarchitectureanddesignmustsimplyimprovethequalityofliving."}]></project-carousel> -->
-
-            <elistide></elistide>
-<!--             <div class=" demo-4">
+   <!--      <div ng-repeat="img in projectCtrl.project.images">
+                            <h1>"{{projectCtrl.websiteBaseUrl+img.url}}" alt="image04" </h1>
+                </div> -->
+ <div class=" demo-4">
             <div class="main">
-                <div class="gallery"> -->
+                <div class="gallery">
                     <!-- Elastislide Carousel -->
-                    <!-- <ul id="carouselProject" class="elastislide-list">
-                        <div ng-repeat="img in projectCtrl.project.images">
-                         <li data-preview="{{projectCtrl.websiteBaseUrl+img.url}}">
+                    <ul id="carouselProject" class="elastislide-list">
+                         <li ng-repeat="img in projectCtrl.project.images" data-preview="{{projectCtrl.websiteBaseUrl+img.url}}">
                             <a href="">
                             <img ng-src="{{projectCtrl.websiteBaseUrl+img.url}}" alt="image04" />
                             </a>
                         </li>
-                        </div> -->
 
-                        <!-- <li data-preview="../assets/images/large/4.jpg"><a href=""><img src="../assets/images/small/4.jpg" alt="image04" /></a></li> -->
-                      <!--   <li data-preview="../assets/images/large/5.jpg"><a href=""><img src="../assets/images/small/5.jpg" alt="image05" /></a></li>
+                        <!-- <li data-preview="../assets/images/large/4.jpg"><a href=""><img src="../assets/images/small/4.jpg" alt="image04" /></a></li>
+                        <li data-preview="../assets/images/large/5.jpg"><a href=""><img src="../assets/images/small/5.jpg" alt="image05" /></a></li>
                         <li data-preview="../assets/images/large/6.jpg"><a href=""><img src="../assets/images/small/6.jpg" alt="image06" /></a></li>
                         <li data-preview="../assets/images/large/7.jpg"><a href=""><img src="../assets/images/small/7.jpg" alt="image07" /></a></li>
                         <li data-preview="../assets/images/large/11.jpg"><a href=""><img src="../assets/images/small/11.jpg" alt="image11" /></a></li>
@@ -38,39 +32,14 @@
                         <li data-preview="../assets/images/large/8.jpg"><a href=""><img src="../assets/images/small/8.jpg" alt="image08" /></a></li>
                         <li data-preview="../assets/images/large/9.jpg"><a href=""><img src="../assets/images/small/9.jpg" alt="image09" /></a></li>
                         <li data-preview="../assets/images/large/10.jpg"><a href=""><img src="../assets/images/small/10.jpg" alt="image10" /></a></li> -->
-                    <!-- </ul> -->
+                    </ul>
                     <!-- End Elastislide Carousel -->
-              <!--       <div class="image-preview">
-                        <img id="preview" src="../assets/images/large/4.jpg" />
+                    <div class="image-preview">
+                        <img id="preview" ng-src="../assets/images/large/4.jpg" />
                     </div>
                 </div>
 
                 <p><strong>Resize the browser to see how the carousel adapts</strong></p>
 
             </div>
-            </div> -->
-        </div>
-        <div class="col-md-4 col-xs-12 project-desc" >
-            <h3>{{projectCtrl.project.title}}</h3>
-            <p>{{projectCtrl.project.description}}</p>
-            <h3>Project Details</h3>
-            <ul>
-                <li>Lorem Ipsum</li>
-                <li>Dolor Sit Amet</li>
-                <li>Consectetur</li>
-                <li>Adipiscing Elit</li>
-            </ul>
-        </div>
-    </div>
-    <h3>Related Pictures</h3>
-    <div class="row project-container">
-        <div ng-repeat="img in projectCtrl.project.images">
-            <div class="col-md-3 col-xs-6 no-padding hei photos">
-                <img ng-src="{{projectCtrl.websiteBaseUrl+img.url}}" alt="fff">
             </div>
-        </div>
-    </div>
-</div>
-    <!-- projectSlider -->
-     <!-- // <script src="../assets/javascript/vendor/jssor.slider.min.js"></script> -->
-     <!-- // <script src="../assets/javascript/vendor/jssor.js"></script> -->
